@@ -1,5 +1,5 @@
 ## Angular E-Commerce Application
-This app is built with Node.js API.
+This app use Node.js API.
 FontAwesome and Bootstrap are used in the application.
 When necessary, incoming data according to HTTP requests is used.
 Below you can see the styles of the application and what the front of it looks like.
