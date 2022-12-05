@@ -1,0 +1,42 @@
+<div class="row m-0 my-2  justify-content-center">
+  <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 ">
+    <div class="select-photo-box " style="text-align: center; margin: auto">
+
+      <img src="./assets/sale-item-default.gif" *ngIf="!path" class="user-image" style="margin-top: 20px">
+      <img style="margin-top: 20px" class="user-image" *ngIf="path" [src]="path">
+
+      <div style="margin-top: 10px!important;">
+        <label for="files" class="btn button-select-image select-file-style"
+        >Select
+          Image <i
+            class="fa-solid fa-hand-pointer"></i></label>
+        <input id="files" style="visibility:hidden;" type="file" (change)="getPhoto($event)"
+               formenctype="multipart/form-data">
+
+
+        <div style="margin-top: -30px!important;">
+          <form [formGroup]="inputForm">
+            <input placeholder="Price($)" class="sale-item-input" formControlName="price">
+
+            <h6 style="color: black; text-align: match-parent; margin-top: 10px" class="">
+              <b>Explanation</b>
+            </h6>
+            <textarea class="sale-item-input text-area-sale-item" formControlName="explanation">
+
+            </textarea>
+          </form>
+        </div>
+
+        <button class="button-sale-item" style="width: 100%; margin-top: -10px" (click)="submitData()"
+                [disabled]="!active || !inputForm.valid">Sell Item <i class="fa-solid fa-sack-dollar"></i></button>
+
+
+        <div class="my-1" style="border: 1px solid transparent; width: 100%; height: 20px; margin-top: 10px!important;">
+          <p style="color: black" *ngIf="unSuccess">{{unSuccess}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

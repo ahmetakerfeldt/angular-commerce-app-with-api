@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container-fostrap {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.fostrap-logo {
+  width: 100px;
+  margin-bottom: 15px
+}
+
+h1.heading {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  color: #505050;
+}
+
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+}
+
+.card {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: box-shadow .25s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-card {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  display: block;
+  overflow: hidden;
+}
+
+.img-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: all .25s ease;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.card-title {
+  margin-top: 0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+
+.card-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+
+.card-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+
+.card-read-more a {
+  text-decoration: none !important;
+  padding: 10px;
+  font-weight: 600;
+  text-transform: uppercase
+}
+
+.spin-earth-on-hover{
+
+  transition: ease 200s !important;
+  transform: rotate(-3600deg) !important;
+}
+
+.brand-logo{
+  margin-left: 25px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.btn-request{
+  padding: 10px 25px;
+  border: 1px solid #FFCB39;
+  border-radius: 100px;
+  font-weight: 400;
+}
+
+.btn-request:hover{
+  background-color: #FFCB39;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
+}
+
+.btn-go-home{
+  position: relative;
+  z-index: 200;
+  margin: 15px auto;
+  width: 300px;
+  padding: 10px 15px;
+  border: 1px solid #FFCB39;
+  border-radius: 100px;
+  font-weight: 400;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing : 2px;
+  font-size: 11px;
+
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.btn-go-home:hover{
+  background-color: #FFCB39;
+  color: black!important;
+  transform: scale(1.05);
+  box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
+}
+
+.central-body{
+  /*    width: 100%;*/
+  padding: 10% 5% 10% 5%;
+  text-align: center;
+}
+
+
+
+.object_rocket{
+  z-index: 95;
+  position: absolute;
+  transform: translateX(-50px);
+  top: 75%;
+  pointer-events: none;
+  animation: rocket-movement 200s linear infinite both running;
+}
+
+.object_earth{
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  z-index: 90;
+  /*    animation: spin-earth 100s infinite linear both;*/
+}
+
+.object_moon{
+  position: absolute;
+  top: 12%;
+  left: 25%;
+  /*
+      transform: rotate(0deg);
+      transition: transform ease-in 99999999999s;
+  */
+}
+
+.earth-moon{
+  font-family: system-ui, -apple-system !important;
+  font-size: 16px !important;
+  text-transform: uppercase
+}
+
+.object_astronaut{
+  animation: rotate-astronaut 200s infinite linear both alternate;
+}
+
+.box_astronaut{
+  z-index: 110 !important;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  will-change: transform;
+  animation: move-astronaut 50s infinite linear both alternate;
+}
+
+
+.stars{
+  height: 1000px;
+
+
+}
+
+.box-image {
+  background: transparent!important;
+  width: 100%!important;
+  height: 100%!important;
+}
+
+.box_moon{
+  z-index: 110 !important;
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  will-change: transform;
+  animation: move-astronaut 50s infinite linear both alternate;
+}
+
+.object_moons{
+  animation: rotate-astronaut 200s infinite linear both alternate;
+}
+
+.box_earth{
+  z-index: 110 !important;
+  position: absolute;
+  top: 60%;
+  right: 20%;
+  will-change: transform;
+  animation: move-astronaut 50s infinite linear both alternate;
+}
+
+.object_earths{
+  animation: rotate-astronaut 200s infinite linear both alternate;
+}

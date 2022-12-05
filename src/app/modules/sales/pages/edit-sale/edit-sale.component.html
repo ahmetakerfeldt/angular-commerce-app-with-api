@@ -1,0 +1,37 @@
+<div class="row m-0">
+  <section class="wrapper">
+    <div class="container-fostrap">
+      <div class="content">
+        <div class="container">
+          <div class="col-sm-12">
+            <div class="row col-sm-12 justify-content-center" style="height: 300px">
+              <div class="card col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <a class="img-card">
+                  <img *ngIf="!this.null" Sales [paths]="item.imagePath">
+                  <img *ngIf="this.null" src="assets/404.gif">
+                </a>
+
+                <form [formGroup]="inputForm">
+                  <div class="card-content">
+                    <p *ngIf="this.null">Please go to previous page!</p>
+                    <input placeholder="New Price" class="edit-sale-input" formControlName="price" *ngIf="!this.null">
+                    <b *ngIf="!this.null">Explanation:</b>
+                    <textarea formControlName="explanation" class="text-area-style" *ngIf="!this.null">
+                  </textarea>
+                  </div>
+                </form>
+                <div class="card-read-more">
+                  <button *ngIf="!this.null" style="text-decoration: none; font-size: 18px; color: green; width: 50%"
+                          class="btn btn-link btn-block" (click)="change()" [disabled]="!item.imagePath"
+                  >
+                    Change
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

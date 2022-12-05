@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg bg-purple">
+  <div class="container-fluid stars">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <img *ngIf="path" Image [paths]="path" class="navbar-image nav-item"
+             routerLink="/home/settings/change-profile-photo">
+        <li class="nav-item links-style" style="margin-left: -15px!important;"><a
+          href="https://github.com/ahmetakerfeldt" target="_blank">E-Commerce</a></li>
+        <li class="nav-item links-style"><a routerLink="/home">Home(All Sales)</a></li>
+        <li class="nav-item links-style"><a routerLink="/sale-item">Sell Item</a></li>
+        <li class="nav-item links-style"><a routerLink="/my-sales">My Sales</a></li>
+        <li class="nav-item links-style"><a routerLink="/my-buys">My Buys</a></li>
+      </ul>
+      <form class="d-flex navbar-links" role="search">
+        <ul>
+          <li><a routerLink="/home/settings" class=""><i class="fas fa-cog"></i> Settings</a></li>
+          <li><a routerLink="/login" class="btn-request"><i class="fas fa-sign-out" style="color: gray"></i></a></li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</nav>

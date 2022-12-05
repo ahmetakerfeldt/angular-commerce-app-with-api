@@ -1,0 +1,86 @@
+.change-username-input {
+  border: 1px solid gray;
+  width: 80%;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 3px;
+  background-color: transparent;
+  padding-left: 10px;
+  color: white;
+}
+
+.change-username-input:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+.change-username-input::placeholder {
+  font-size: 16px;
+  color: white;
+}
+
+.change-username-button:hover {
+  background-color: steelblue;
+}
+
+.change-username-button:disabled {
+  background-color: gray;
+}
+
+.change-username-message {
+
+  height: 50px;
+  width: 100%;
+  margin-top: 20px
+}
+
+.change-username-box {
+  border-radius: 4px;
+  background: -webkit-linear-gradient(to right, #8B008B, #4B0082);
+  background: linear-gradient(to right , #8B008B, #4B0082);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #FFFFFF;
+  position: relative;
+  height: 274px;
+  width: 100%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+button {
+  background-color: #4B0082;
+  border: 1px solid gray;
+  width: 80%;
+  border-radius: 3px;
+  margin-top: 20px;
+
+
+  color: white!important;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+button:disabled {
+  background-color: transparent;
+  border-color: gray;
+  color: gray!important;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  background-color: transparent;
+  border-color: #FFFFFF;
+}

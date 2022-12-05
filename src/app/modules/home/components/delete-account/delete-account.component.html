@@ -1,0 +1,21 @@
+<div class="row justify-content-center m-0">
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 text-center" style="margin-top: 100px!important;">
+    <div class="col-3 delete-account-box">
+      <div class="text-center">
+        <form [formGroup]="inputForm">
+          <input class="delete-account-input" placeholder="Why You Delete Your Account?" formControlName="reason">
+          <input class="delete-account-input" placeholder="Enter Your Password" formControlName="password">
+          <input class="delete-account-input" placeholder="CONFIRM(Compulsory)" formControlName="confirm">
+          <button (click)="deleteAccount()" [disabled]="!inputForm.valid">
+            Delete Account <i class="fa-solid fa-user-xmark"></i></button>
+          <div class="delete-account-message">
+            <div *ngIf="spinner" class="spinner-border text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            <p *ngIf="unSuccess" style="color: black">{{unSuccess}}</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

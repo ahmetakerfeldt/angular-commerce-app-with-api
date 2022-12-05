@@ -1,0 +1,55 @@
+.user-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid gray;
+}
+
+.button-select-image {
+  background: -webkit-linear-gradient(to right, #8B008B, #4B0082);
+  background: linear-gradient(to right , #8B008B, #4B0082);
+  height: 50px;
+  color: white!important;
+  width: 80%!important;
+  transform: translateX(0.90%);
+
+
+  background-color: gray !important;
+  border-color: gray !important;
+  border-radius: 3px;
+
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.button-select-image:disabled{
+  background-color: gray!important;
+  color: gray!important;
+
+}
+
+.button-select-image:hover{
+  color: black!important;
+
+}
+
+
+.change-photo-box {
+  border-radius: 4px;
+  background: -webkit-linear-gradient(to right, #8B008B, #4B0082);
+  background: linear-gradient(to right , #8B008B, #4B0082);
+  color: white !important;
+  height: auto;
+  width: 100%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.button-select-image:active {
+  transform: scale(0.90) !important;
+}

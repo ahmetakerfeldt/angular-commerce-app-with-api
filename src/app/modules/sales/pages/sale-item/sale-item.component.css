@@ -1,0 +1,109 @@
+.user-image {
+  width: 80%;
+  height: 200px;
+  border-radius: 3px;
+  object-fit: cover;
+  border: 1px solid gray;
+}
+
+.button-sale-item {
+  color: white;
+  margin-top: 20px !important;
+  margin-left: -8px !important;
+  background: -webkit-linear-gradient(to right, #4B0082, #8B008B);
+  background: linear-gradient(to right, #4B0082, #8B008B);
+  height: 50px;
+  width: 80% !important;
+
+  transform: translateX(0.90%);
+  border: 1px solid white;
+  border-radius: 3px;
+
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.button-sale-item:disabled{
+  background: rgb(180, 180, 180)!important;
+  color: black;
+  border: 1px solid gray!important;
+}
+
+.button-sale-item:hover {
+  box-shadow: 0px 2px 10px 5px #8A2BE2;
+}
+
+
+.select-photo-box {
+  border: 1px solid rgb(200, 200, 200);
+  background-color: whitesmoke;
+  border-radius: 3px;
+  color: white !important;
+  height: auto;
+  width: 100%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+  position: center !important;
+}
+
+.button-select-image:active {
+  transform: scale(0.90) !important;
+}
+
+
+.sale-item-input {
+
+  padding-left: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 3px;
+  margin-top: 20px;
+  background-color: white;
+  width: 80%;
+  height: 50px;
+  color: black;
+
+
+
+}
+
+.sale-item-input:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+
+.sale-item-input::placeholder {
+  color: gray;
+  padding-left: 4px;
+}
+
+.text-area-sale-item {
+  height: 145px !important;
+  margin-top: -5px !important;
+  font-size: 13px;
+  resize: none;
+}
+
+.select-file-style {
+  border: 1px solid rgb(200, 200, 200);
+  color: #3c97bf;
+  background-color: white;
+  border-radius: 3px;
+  width: 80%;
+  height: 50px;
+  outline: none;
+  margin-top: 10px
+}
+
+
+
+.btn-go-home:hover{
+  background-color: #FFCB39;
+  color: black!important;
+  transform: scale(1.05);
+  box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
+}

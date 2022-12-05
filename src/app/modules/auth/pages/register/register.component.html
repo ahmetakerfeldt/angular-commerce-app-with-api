@@ -1,0 +1,47 @@
+<div class="row m-0 justify-content-center">
+  <div class="my-4 col-xl-8 col-lg-4 col-md-6 col-sm-12">
+    <div class="box_moon">
+      <img class="object_moons" src="http://salehriaz.com/404Page/img/moon.svg" width="100px">
+    </div>
+    <h1 style="text-align: center;font-family: 'Dubai'; color: #4B0082"><i><b> <i style="color: white">E-</i>Commerce
+      App <i
+      ></i></b></i></h1>
+    <div class="container my-5" id="container">
+
+      <div class="form-container sign-in-container">
+        <form [formGroup]="inputForm">
+          <h1>Sign Up</h1>
+          <div class="social-container">
+          </div>
+          <input placeholder="Username" formControlName="username">
+          <input class="" placeholder="Password" formControlName="password">
+          <br><br>
+          <button (click)="register()">Sign Up</button>
+          <div style="border: 1px solid white; width: 280px; height: 40px">
+            <div class="spinner-border text-success my-3" role="status" *ngIf="spinner">
+              <span class="sr-only"></span>
+            </div>
+            <p style="color: green" *ngIf="success">{{success}}</p>
+            <p style="color: red" *ngIf="unSuccess">{{unSuccess}}!</p>
+          </div>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>To keep connected with us please login with your personal info</p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Join Us!</h1>
+            <p>You can join us by registering.</p>
+            <button class="ghost" id="signUp" routerLink="/login">Sign In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

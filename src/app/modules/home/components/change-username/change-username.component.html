@@ -1,0 +1,25 @@
+<div class="row m-0 justify-content-center">
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 text-center" style="margin-top: 100px!important;">
+    <div class="col-3 change-username-box">
+      <div class="text-center">
+        <form [formGroup]="inputForm">
+          <input class="change-username-input" placeholder="New Username" formControlName="newUsername">
+          <input class="change-username-input" placeholder="Enter Your Password" formControlName="password">
+          <button [disabled]="!inputForm.valid" (click)="changeUsername()">
+            Change Username <i class="fa-solid fa-user"></i></button>
+          <div class="change-username-message">
+            <div *ngIf="spinner" class="spinner-border text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            <p *ngIf="unSuccess" style="color: black">{{unSuccess}} Try again after <span
+              style="color: white">{{timeLeft}}</span> seconds.(For Security)</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,93 @@
+<div>
+  <div class="row m-0" *ngIf="!empty">
+    <section class="wrapper">
+      <div class="container-fostrap">
+        <div class="content">
+          <div class="container">
+            <div class="col-sm-12">
+              <div class="row col-sm-12 justify-content-center" style="height: 300px">
+                <div class="card col-xl-3 col-lg-4 col-md-6 col-sm-8" *ngFor="let item of allSales">
+                  <a class="img-card">
+                    <img Sales [paths]="item.imagePath">
+                  </a>
+
+                  <span><b>Seller: </b></span>
+                  <span style="color: blue">{{item.seller}}</span>
+                  <br>
+
+                  <div class="card-content">
+                    <h4 class="card-title"
+                        style="background-color: rgb(250, 250, 250); border: 1px solid rgb(210, 210, 210); padding-left: 3px;
+                       border-top-left-radius: 4px; border-top-right-radius: 4px">
+                      Price: <span style="color: green">{{item.price}}$</span>
+                    </h4>
+                    <b>Explanation:</b>
+                    <div
+                      style="border: 1px solid rgb(210, 210, 210); width: 100%; height: 150px; background-color: rgb(250, 250, 250)">
+                      <p style="font-size: 12px; padding: 5px">
+                        {{item.explanation}}
+                      </p>
+                    </div>
+                    <p class="card-footer"
+                       style="font-size: 14px; margin-top: 10px; padding-left: 25px; border: 1px solid rgb(210, 210, 210)">
+                      <b>Release Date:</b> {{item.createdAt | date:'dd MMMM yyyy'}}
+                    </p>
+                  </div>
+                  <div class="card-read-more" style="margin-top: -25px!important;">
+                    <button style="text-decoration: none; font-size: 18px" class="btn btn-link btn-block"
+                            (click)="buyItem(item)">
+                      Buy Item
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+<div class="row justify-content-center m-0">
+  <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+    <div class="" *ngIf="empty">
+
+      <div class="central-body">
+        <h3 style="color: white" class="earth-moon">No one has made a sale yet, make the first sale!</h3>
+        <br>
+        <br>
+        <img class="image-404" src="assets/sales-not-found.gif"
+             style=" margin-top: -28px!important; width: 300px; background-color: transparent">
+        <a routerLink="/sale-item" class="btn-go-home">Go Sell Item</a>
+      </div>
+      <div class="objects">
+        <div class="box_astronaut">
+          <img class="object_astronaut" src="http://salehriaz.com/404Page/img/astronaut.svg" width="40px">
+        </div>
+
+        <img class="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg" width="40px">
+
+
+        <div class="box_earth">
+          <img class="object_earths" src="http://salehriaz.com/404Page/img/earth.svg" width="100px">
+        </div>
+
+        <div class="box_moon">
+          <img class="object_moon" src="http://salehriaz.com/404Page/img/moon.svg" width="100px">
+        </div>
+
+
+      </div>
+      <div class="glowing_stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
